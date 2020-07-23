@@ -39,6 +39,7 @@ const executeJob = () => {
   });
 }
 
-var j = schedule.scheduleJob('10 * * * *', function () {
+// every three hours
+var j = schedule.scheduleJob('0 */3 * * *', function () {
   executeJob();
 });
